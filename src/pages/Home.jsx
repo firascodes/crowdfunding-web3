@@ -23,11 +23,16 @@ const Home = () => {
   }, [address, contract]);
 
   return (
-    <DisplayCampaigns
-      title="All Campaigns"
-      isLoading={isLoading}
-      campaigns={campaigns}
-    />
+    <div>
+      <h1 className="font-epilogue font-semibold text-white text-4xl mb-6 uppercase">
+        Crowdfunding Dapp
+      </h1>
+      <DisplayCampaigns
+        title="All Campaigns"
+        isLoading={isLoading}
+        campaigns={campaigns}
+      />
+    </div>
   );
 };
 
